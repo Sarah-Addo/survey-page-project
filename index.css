@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Raleway';
+	
+}
+body {
+	background-color:#ffe6e6;
+}
+#title {
+	margin-top:10px;
+	text-align:center;
+
+}
+
+#form-outer {
+	background-color:#ffe6e6;
+}
+
+#discription {
+	margin-top:8px;
+	font-size:16px;
+}
+
+#form-inner{
+	text-align:center;
+	background-color:#ffffff;
+	height:700px;
+	width:70%;
+	margin: auto;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    bottom: 0; 
+    right:0;
+}
+.form-row {
+	margin-top:20px;
+	display:flex;
+	justify-content:center;
+}
+.form-row-header{
+	display:inline-block;
+}
+.text-field {
+	border: 1px solid #b3b3cc;
+	border-radius:2px;
+	width:170px;
+	height:25px;
+
+}
+.labels {
+	width:6%;
+    text-align:right;
+    padding-right:10px;
+}
+.radio-buttons {
+	text-decoration: none;
+}
+
