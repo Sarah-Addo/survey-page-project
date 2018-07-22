@@ -27,7 +27,7 @@ body {
 #form-inner{
 	text-align:center;
 	background-color:#ffffff;
-	height:700px;
+	height:85%;
 	width:70%;
 	margin: auto;
     position: absolute;
@@ -52,11 +52,17 @@ body {
 
 }
 .labels {
+	
 	width:6%;
     text-align:right;
     padding-right:10px;
 }
-.radio-buttons {
-	text-decoration: none;
+#gender-label {
+	transform: translate(-90%, 0);
+}
+#radio-buttons {
+	transform: translate(-70%, 0);
+	text-align:left;
+	
 }
 
