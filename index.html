@@ -17,7 +17,7 @@
 			<div class="labels">
 			<label id ="name-label" for="name">Name: </label>
 			</div>
-			<input type="text" placeholder=" Enter your Name" name ="name" id = "name" class="text-field">
+			<input type="text" placeholder=" Enter your Name" name ="name" id = "name" class="text-field" >
 
 		</div>
 
@@ -25,7 +25,7 @@
 			<div class = "labels">
 			<label id ="age-label" for="age">Age: </label>
 			</div>
-			<input type ="number" placeholder=" Enter your Age" name ="age" id ="number" class="text-field" step="1">
+			<input type ="number" placeholder=" Enter your Age" name ="age" id ="number" class="text-field" step="1" min="1" max="125">
 		</div>
 
 		<div class="form-row">
@@ -36,14 +36,14 @@
 		</div>
 
 		<div class="form-row">
-			<div class = "labels">
+			<div class = "labels" id = "gender-label">
 			<label id ="gender-label" for="gender">Gender:</label>
 			</div>
 
 			<div id="radio-buttons">
-  			<input id="female" type="radio" name="gender">Female</br>
-			<input id="male" type="radio" name="gender">Male</br>
-			<input id="other" type="radio" name="gender">Other
+  			<input id="female" type="radio" name="gender"> Female</br>
+			<input id="male" type="radio" name="gender"> Male</br>
+			<input id="other" type="radio" name="gender"> Other
 			</div>
 
 		</div>
