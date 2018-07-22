@@ -52,7 +52,6 @@ body {
 
 }
 .labels {
-	
 	width:6%;
     text-align:right;
     padding-right:10px;
@@ -72,10 +71,21 @@ body {
 .dropdown {
 	transform: translate(-70%, 0);
 }
-#favorite-types {
-	border:1px solid #000;
+#favorite-types-label {
+	width:20%;
+	transform: translate(-45%, 0);
 
-	transform: translate(-70%, 0);
-	width:50%;
+}
+#checkbox-list{
+	text-align:left;
+	transform: translate(-75%, 0);
+}
+#comments-label{
+	 width:20%;
+	transform: translate(0, 0);
+}
+#comments-area {
+	width:30%;
+	height:15%;
 }
 
