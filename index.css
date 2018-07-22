@@ -65,4 +65,17 @@ body {
 	text-align:left;
 	
 }
+#frequency-label {
+	transform: translate(-42%, 0);
+	width:20%;
+}
+.dropdown {
+	transform: translate(-70%, 0);
+}
+#favorite-types {
+	border:1px solid #000;
+
+	transform: translate(-70%, 0);
+	width:50%;
+}
 
