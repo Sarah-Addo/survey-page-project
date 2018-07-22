@@ -9,7 +9,7 @@
 <body>
 	<h1 id = "title"> Survey Form</h1>
 	<div id = "form-inner">
-		<p id = "discription">Let us know how you prefer to stay active!</p>
+		<p id = "description">Let us know how you prefer to stay active!</p>
 	
 
 	<form id="survey-form">
@@ -17,13 +17,13 @@
 			<div class="labels">
 			<label id ="name-label" for="name">Name: </label>
 			</div>
-			<input type="text" placeholder=" Enter your Name" name ="name" id = "name" class="text-field" >
+			<input type="text" placeholder=" Enter your Name" name ="name" id ="name" class="text-field" required >
 
 		</div>
 
 		<div class="form-row">
 			<div class = "labels">
-			<label id ="age-label" for="age">Age: </label>
+			<label id ="number-label" for="age">Age: </label>
 			</div>
 			<input type ="number" placeholder=" Enter your Age" name ="age" id ="number" class="text-field" step="1" min="1" max="125">
 		</div>
@@ -32,7 +32,7 @@
 			<div class = "labels">
 			<label id ="email-label" for="email">Email: </label>
 			</div>
-			<input type ="email" placeholder=" Enter your Email" name ="email" id ="email" class="text-field">
+			<input type ="email" placeholder=" Enter your Email" name ="email" id ="email" class="text-field" required>
 		</div>
 
 		<div class="form-row">
@@ -41,9 +41,9 @@
 			</div>
 
 			<div id="radio-buttons">
-  			<input id="female" type="radio" name="gender"> Female</br>
-			<input id="male" type="radio" name="gender"> Male</br>
-			<input id="other" type="radio" name="gender"> Other
+  			<input id="female" type="radio" name="gender" value="1"> Female</br>
+			<input id="male" type="radio" name="gender" value="2"> Male</br>
+			<input id="other" type="radio" name="gender" value="3"> Other
 			</div>
 		</div>
 
@@ -52,7 +52,7 @@
 				<label id ="workout-frequency" for="frequency">How many times a week do you work out?</label>
 			</div>
 			<select id="dropdown" name="workoutFrequency" class="dropdown">
-      			<option disabled value>Select an option</option>
+      			<option disabled value selected value>Select an option</option>
       			<option value ="1x">1x a Week</option>
       			<option value="2-3x">2-3x a Week</option>
       			<option value="4-5x">4-5x a Week</option>
@@ -65,11 +65,11 @@
 				<label id="favorite-types" for="favorite-types">What are your favorite types of workouts?</label>
 			</div>
 			<div id="checkbox-list">
-			<label for="cardio"><input id="cardio" type="checkbox" name="favorite-types"> Cardio</label></br>
-			<label for="weight-lifting"><input id="weight-lifting" type="checkbox" name="favorite-types"> Weight Lifting</label></br>
-			<label for="yoga"><input id="yoga" type="checkbox" name="favorite-types"> Yoga</label></br>
-			<label for="cycling"><input id="cycling" type="checkbox" name="favorite-types"> Cycling</label></br>
-			<label for="other"><input id="other" type="checkbox" name="favorite-types"> Other</label>
+			<label for="cardio"><input id="cardio" type="checkbox" name="favorite-types" value="cardio"> Cardio</label></br>
+			<label for="weight-lifting"><input id="weight-lifting" type="checkbox" name="favorite-types"value="weight-lifting"> Weight Lifting</label></br>
+			<label for="yoga"><input id="yoga" type="checkbox" name="favorite-types" value="yoga"> Yoga</label></br>
+			<label for="cycling"><input id="cycling" type="checkbox" name="favorite-types" value="cycling"> Cycling</label></br>
+			<label for="other"><input id="other" type="checkbox" name="favorite-types" value="other"> Other</label>
 			</div>
 
 		</div>
@@ -79,8 +79,12 @@
 				<label id="comments-label" for="comments">Any questions, comments, or concerns?</label>
 			</div>
 			<textarea id ="comments-area" name="comment" form="comment-form" placeholder="Enter text here..."></textarea>
-	
+		</div>
 
+		<div class="form-row">
+			<button type="submit" id ="submit">Submit</button>
+	
+		</div>
 	</form>
 </div>
 
